@@ -26,4 +26,30 @@ body {
     transform: scale(1.1);
 }
 
+/* current forecast container outline */
+.forecastToday {
+    border: 3px solid #9370DB;
+    border-radius: 35px;
+    height: 250px;
+}
+
+/* class to style city history button*/
+.cityButton, .searchButton {
+    width: 100%;
+    background-color: #9370DB;
+    border:none !important;
+    outline:none !important;
+    color: black;
+}
+
+.cityButton:hover, .searchButton:hover {
+    background-color: #565688;
+}
+
+.card {
+    background-color: #9370DB;
+    color: black;
+    width: 10rem;
+    background: linear-gradient(to top, #9370DB, lavender);
+}
 
