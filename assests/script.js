@@ -44,5 +44,36 @@ const getForecast = (city) => {
         });
 };
 
+const renderWeather = (data) => {
+    let liveDate = new Date().toLocaleDateString();
+    const temp = (data.main.temp - 306.3) * 1.8 + 32;
 
+    weatherForecast.innerHTML = `
+        <h1 class="fw-bold m-2">${data.name} (${liveDate})</h1>
+        <p class="m-2">Temperature: ${temp.toFixed(2)} °F
+        </br>Wind Speed: ${data.wind.speed} MPH 
+        </br>Humidity: ${data.main.humidity}%</p>`;
+ 
+    }
+
+
+
+
+//search history
+function renderCityBtn(city) {
+    const currentBtn = Array.from(
+        searchHistory.querySelectorAll("button")).find((btn) => btn.textContent === city);
+
+        if (!currentBtn) {
+            const btn = document.createElement("button");
+            btn.textContent = city;
+            btn.className = "btn m-2 btn-primary cityButton";
+            button.setAttribute("data-city", city);
+            button.addEventListener("click", () => {
+                getCity(city);
+                retrieveForecast(city);
+            });
+            cityHistory.prepend(button);
+        }
+    }
 
