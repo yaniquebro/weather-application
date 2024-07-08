@@ -9,37 +9,37 @@
     <title>What the Temp</title>
 </head>
 <body>
-    <!--header-->
+
+
     <header class="container-fluid p-4 headerWhatTheTemp">
         <h1 class="text-center weatherText">What the Temp</h1>
     </header>
 
-    <!-- Main -->
     <main>
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-3 p-1">
-              <!-- Search -->
+<!-- search -->
               <h2 class="fw-bold">Search for a City:</h2>
               <div class="mb-3 pt-2">
-                <input type="text" class="form-control" id="searchCity" placeholder="City Name">
+                <input type="text" class="form-control" id="citySeacrh" placeholder="City Name">
               </div>
               <div class="d-grid gap-2">
-                <button class="btn btn-primary searchButton" type="button">Search</button>
+                <button class="btn btn-primary searchBtn" type="button">Search</button>
               </div>
-              <!-- Search Results -->
+<!-- search results -->
               <div class="searchHistory">
                 <div class="d-grid gap-2 mt-3"></div>
               </div>
             </div>
-            <!-- Forecast Current -->
+<!--current forecast -->
             <div class="col-lg-9">
               <div class="row">
                 <div class="col-sm-10 mt-3">
-                  <div class="forecastToday"></div>
+                  <div class="weatherToday"></div>
                 </div>
               </div>
-              <!-- Five Day Forecast -->
+<!--five day forecast -->
               <h3 class="mt-4 fw-bold">5 Day Forecast:</h3>
               <div class="row renderCards justify-content-space-between"></div>
             </div>
