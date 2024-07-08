@@ -27,14 +27,14 @@ body {
 }
 
 /* current forecast container outline */
-.forecastToday {
+.weatherToday {
     border: 3px solid #9370DB;
     border-radius: 35px;
     height: 250px;
 }
 
 /* class to style city history button*/
-.cityButton, .searchButton {
+.cityButton, .searchBtn {
     width: 100%;
     background-color: #9370DB;
     border:none !important;
