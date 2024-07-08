@@ -42,7 +42,7 @@ body {
     color: black;
 }
 
-.cityButton:hover, .searchButton:hover {
+.cityButton:hover, .searchBtn:hover {
     background-color: #565688;
 }
 

@@ -29,4 +29,20 @@ function getCity(city) {
     });
 }
 
+// get forecast
+const getForecast = (city) => {
+    const forecastQueryUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+
+    fetch(forecastQueryUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            renderForecast(data);
+        })
+        .catch((error) => {
+            console.error("Error in fetching forecast:", error);
+            alert("Data not found For." + city);
+        });
+};
+
+
 
