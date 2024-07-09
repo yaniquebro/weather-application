@@ -15,6 +15,7 @@ For this projeect we used a server side api to create a weather app that searche
 
 
 ## Contributor
-Xpert Learning Assistant
+Xpert Learning Assistant helped figure out my search button pproblem
+My friend Jahathan on rendering weather and forecast
 https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys
 
